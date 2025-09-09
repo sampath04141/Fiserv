@@ -47,5 +47,5 @@ stages:
           - task: PublishTestResults@2
             inputs:
               testResultsFormat: 'JUnit'
-              testResultsFiles: '**/e2e-*.xml'
+              testResultsFiles: '**/web-*.xml'
             condition: 'always()'
