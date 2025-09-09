@@ -1,0 +1,12 @@
+1-Follow page object model (POM) and generate meaningful file names in pages/aiPages folder
+2-Go to https://www.fiserv.com/en.html.
+3-Accept the "Accept All" cookie popup.
+4-In the top navigation menu, click the "Developers" menu item.
+5-Verify that a new tab opens at https://developer.fiserv.com/.
+6-In the new tab, accept the cookie popup again.
+7-Validate that the main banner contains the text:
+	"Build and test the future of financial services."
+8-Validate that the Featured Products section includes:
+	"Banking Hub"
+	"Commerce Hub"
+	"Issuer Solutions"
