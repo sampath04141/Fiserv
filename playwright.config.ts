@@ -51,7 +51,8 @@ export default defineConfig({
 
     {
       name: 'ci', /* CI/CD */
-      use: { ...devices['Desktop Chrome'], headless: true },
+      use: { ...devices['Desktop Chrome'], 
+        headless: true },
       testMatch: ["**/tests/**/*.spec.ts"],
     }
 
