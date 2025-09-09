@@ -22,7 +22,6 @@ export class HomePage {
         const itemList = items.map(t => t.trim());
         const isFound = itemList.includes(item.trim());
         await expect(isFound).toBe(true);
-
     }
 
     async clickMenuItem(menuItem:string):Promise<void>{
