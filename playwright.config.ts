@@ -26,7 +26,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-     baseURL: 'https://www.fiserv.com/en-au.html',
+    baseURL: 'https://www.fiserv.com/en-au.html',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -36,16 +36,24 @@ export default defineConfig({
   projects: [
     {
       name: 'wt', /*Web Test*/
-      use: { ...devices['Desktop Chrome'], headless:false,
+      use: {
+        ...devices['Desktop Chrome'], headless: false,
       },
-      testMatch:["**/tests/webTest/*.spec.ts"],
+      testMatch: ["**/tests/webTest/*.spec.ts"],
     },
-     {
-      name: 'ai', /*Web Test*/
-      use: { ...devices['Desktop Chrome'], headless:false,
+    {
+      name: 'ai', /*AI */
+      use: {
+        ...devices['Desktop Chrome'], headless: false,
       },
-      testMatch:["**/tests/webAI/*.spec.ts"],
+      testMatch: ["**/tests/webAI/*.spec.ts"],
     },
+
+    {
+      name: 'ci', /* CI/CD */
+      use: { ...devices['Desktop Chrome'], headless: true },
+      testMatch: ["**/tests/**/*.spec.ts"],
+    }
 
     // {
     //   name: 'firefox',
