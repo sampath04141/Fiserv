@@ -80,3 +80,5 @@ Fiserv Project Root
     [npx playwright test --project=ws]
 - Project created for run AI test 'ai'
     [npx playwright test --project=ai]
+- Project created for run CI/CD test 'ci'
+    [npx playwright test --project=ci]

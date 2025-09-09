@@ -35,7 +35,7 @@ stages:
             env:
               CI: "true"
             inputs:
-              script: npx playwright test --project=ai
+              script: npx playwright test --project=ci
 
           - task: PublishPipelineArtifact@1
             inputs:
